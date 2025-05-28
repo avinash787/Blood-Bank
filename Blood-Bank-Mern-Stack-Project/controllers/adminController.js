@@ -1,5 +1,5 @@
 const userModel = require("../models/userModel");
-
+//just to check git pull request
 //GET DONAR LIST
 const getDonarsListController = async (req, res) => {
   try {
@@ -10,7 +10,7 @@ const getDonarsListController = async (req, res) => {
     return res.status(200).send({
       success: true,
       Toatlcount: donarData.length,
-      message: "Donar List Fetched Successfully",
+      message: "Donar List Fetched Successfully and fine",
       donarData,
     });
   } catch (error) {
